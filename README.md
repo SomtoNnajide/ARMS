@@ -1,6 +1,6 @@
 # ARMS
 Automatic Roll Marking System
 
-Team members: Somto
+Team members: Somto and Liam
 
-Some extra words because why not.
+Pi model used is Raspberry pi 3b+
