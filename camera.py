@@ -8,7 +8,5 @@ camera = PiCamera() #camera object
 
 camera.start_preview() #start a 5 second preview
 sleep(5)
-camera.capture('/home/pi/Desktop/img2.jpg') #capture and save to location
+camera.capture('/home/pi/Desktop/img.jpg') #capture and save to location
 camera.stop_preview() #stop preview
-
-
