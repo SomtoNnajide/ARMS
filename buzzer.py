@@ -7,7 +7,7 @@ import time
 
 GPIO.setmode(GPIO.BCM) #set pin mode
 GPIO.setup(18,GPIO.OUT) #set pin output
-pwm = GPIO.PWM(18,250) #assign pwm pin with 1000 frequency
+pwm = GPIO.PWM(18,250) #assign pwm pin with 250 frequency
 
 while True:
     pwm.start(50) #start duty cycle
