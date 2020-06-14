@@ -35,6 +35,8 @@ def findPic(path):
             time.sleep(0.3)
             pwm.start(0)
             time.sleep(0.3)
+            
+    GPIO.cleanup()
 
 if __name__ == "__main__": #python main function
     findPic(picpath) #call function with parameter
