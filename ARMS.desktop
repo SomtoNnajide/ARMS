@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=ARMS
+Exec=/usr/bin/python2.7 /home/pi/ARMS_code/unitopener.py
+
