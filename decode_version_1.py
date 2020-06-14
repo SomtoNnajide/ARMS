@@ -1,3 +1,6 @@
+#Version 1 decode script
+
+#libraries
 from __future__ import print_function
 import pyzbar.pyzbar as pyzbar
 import numpy as np 
