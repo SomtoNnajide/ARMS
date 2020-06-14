@@ -23,7 +23,7 @@ camera.stop_preview() #close camera preview
 #buzzer beeps once if true
 #and three times if false
 #similar to later on system functionality whereby it beeps if barcode is recognised or not
-def findPic(path):
+def findPic(path): 
     if os.path.exists(path): #check path
         pwm.start(50)
         time.sleep(1)
