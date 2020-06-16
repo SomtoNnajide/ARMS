@@ -18,7 +18,7 @@ sleep(2)
 #open the output csv file for writing and initialize the set of
 #barcodes found so far
 csv = open("barcodes.csv", "a")
-found = set()
+found = []
 
 #loop over the frames from the video stream
 while True:
@@ -51,7 +51,14 @@ while True:
         if barcodeData not in found:
             csv.write("{},{}\n".format(barcodeData, datetime.datetime.now()))
             csv.flush()
-            found.add(barcodeData)
+            found.extend([barcodeData, 100])
+            
+    for i in found:
+        if i % 2 == 1:
+            found[i] = found[i] - 1
+            if found[i] == 0:
+                del found[i]
+                del found[i - 1]
     
     #show the output frame
     cv2.imshow("Barcode Scanner", frame)
