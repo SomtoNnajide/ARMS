@@ -97,5 +97,6 @@ def scanCode():
     vs.stop()
 
 if __name__ == '__main__':
-    os.system('sudo date -s "$(wget -qSO- -max-redirect=0 google.com 2>&1 | grep Date: | cut -d\'\'-f5-8)Z"')   #code which corrects timezone if timezone wrong
-    scanCode()                                                                                                  #call scanCode()
+    #uncomment line 101 if timezone incorrect
+    #os.system('sudo date -s "$(wget -qSO- -max-redirect=0 google.com 2>&1 | grep Date: | cut -d\'\'-f5-8)Z"') 
+    scanCode()                                                                                                  
