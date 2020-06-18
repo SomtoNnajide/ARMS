@@ -1,5 +1,5 @@
 #Version 2 of decode script with image processing (gamma correction)
-#An attempt to "un-blur" blurry images
+#An attempt to "un-blur" blurry images 
 
 #libraries
 from __future__ import print_function
