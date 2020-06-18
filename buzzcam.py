@@ -2,7 +2,7 @@
 from picamera import PiCamera
 from time import sleep
 import RPi.GPIO as GPIO
-import os.path
+import os.path 
 import time
 
 camera = PiCamera() #instantiate camera
