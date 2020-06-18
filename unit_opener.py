@@ -1,4 +1,4 @@
-#A test to autostart ARMS.py program upon pi start-up/reboot
+#A test to autostart ARMS.py program upon pi start-up/reboot 
 import os
 import time
  
